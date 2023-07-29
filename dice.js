@@ -12,12 +12,11 @@ let t1 = true;
 let t2 = true;
 
 teamA.addEventListener("click",function gaming() {
-    let num1 = Math.ceil(Math.random()*6);    
-    Score_of_A+=num1;
  
     if (t1){
         t2=true;
-        t1=false;
+        t1=false;let num1 = Math.ceil(Math.random()*6);    
+        Score_of_A+=num1;
         A_score.textContent="score : "+Score_of_A;
         teamA.src="./images/dice"+num1+".png";
 
@@ -46,12 +45,12 @@ teamA.addEventListener("click",function gaming() {
 });
 
 teamB.addEventListener("click",function gaming2() {
-    let num2 = Math.ceil(Math.random()*6);
-    Score_of_B+=num2;
 
     if (t2){
         t1=true;
         t2=false;
+        let num2 = Math.ceil(Math.random()*6);
+        Score_of_B+=num2;
         teamB.src="./images/dice"+num2+".png";
         B_score.textContent="score : "+Score_of_B;
 
